@@ -56,20 +56,14 @@ body {
         span { display: block; }
 
         a {
-            color: $pink;
+            background-color: $pink;
+            color: white;
             text-decoration: none;
             border: 2px solid $pink;
-            background-color: transparent;
             border-radius: 7.5px;
             padding: 8px 16px;
             display: inline-block;
             margin-top: 2.5vh;
-            transition: all .45s ease-in-out;
-            &:hover {
-                background-color: $pink;
-                color: white;
-                transition: all .45s ease-in-out;
-            }
         }
     }
 
