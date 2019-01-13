@@ -33,7 +33,7 @@ body {
 
     .logo-container {
         svg {
-            fill: $mint;
+            fill: #f2f2f2;
             max-width: 80vw;
             height: auto;
         }
@@ -41,7 +41,7 @@ body {
             font-size: 24px;
             letter-spacing: 1px;
             margin-top: -4px;
-            color: $mint;
+            color: #f2f2f2;
         }
     }
 
@@ -126,6 +126,7 @@ body {
     @media only screen and (min-width: 1440px) {
         padding: 84px 94px;
         background-size: 100% auto;
+        background-position: left;
         .logo-container svg {
             max-width: 400px;
         }
