@@ -1,0 +1,138 @@
+body {
+    min-height: 100vh;
+    position: relative;
+    background-image: url('../images/holding-background.jpg');
+    background-size: calc(100vw * 2) 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 7.5vh 7.5vw 0vh;
+
+    & > * { position: relative; z-index: 2; }
+
+    &::before {
+        content: "";
+        height: 100vh; width: 100vw;
+        background-color: rgba(33, 33, 33, 0.75);
+        position: absolute;
+        top: 0; left: 0;
+        z-index: 1;
+    }
+
+    main {
+        max-width: 1440px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    h3.pink {
+        margin-bottom: 48px;
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    .logo-container {
+        svg {
+            fill: $mint;
+            max-width: 80vw;
+            height: auto;
+        }
+        h2 {
+            font-size: 24px;
+            letter-spacing: 1px;
+            margin-top: -4px;
+            color: $mint;
+        }
+    }
+
+    .holding-content {
+        margin-top: 42px;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: .5px;
+        color: #f2f2f2;
+        font-weight: 400;
+
+        span { display: block; }
+
+        a {
+            color: $pink;
+            text-decoration: none;
+            border: 2px solid $pink;
+            background-color: transparent;
+            border-radius: 7.5px;
+            padding: 8px 16px;
+            display: inline-block;
+            margin-top: 2.5vh;
+            transition: all .45s ease-in-out;
+            &:hover {
+                background-color: $pink;
+                color: white;
+                transition: all .45s ease-in-out;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 320px) {
+        h3.pink { margin-bottom: 10vh; }
+        .holding-content { margin-top: 9vh; }
+    }
+
+    @media only screen and (min-width: 600px) {
+        h3.pink { width: 50vw; }
+        .holding-content, .logo-container {
+            width: 50vw;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        h3.pink {
+            width: 45vw;
+            margin-bottom: 64px;
+        }
+
+        .holding-content, .logo-container { width: 45vw; }
+        .holding-content {
+            margin-top: 45px;
+        }
+    }
+
+    @media only screen and (min-width: 1024px) {
+        padding: 76px 82px;
+        background-size: auto 100%;
+        .logo-container svg {
+            max-width: 85%;
+        }
+
+        .holding-content a {
+            padding: 12px 24px;
+            font-weight: 500;
+        }
+    }
+
+    @media only screen and (min-width: 1280px) {
+        padding: 84px 94px;
+        background-size: 100% 100%;
+        .logo-container svg {
+            max-width: 400px;
+        }
+
+        .holding-content, .logo-container {
+            width: 30vw;
+            max-width: 400px;
+        }
+    }
+
+    @media only screen and (min-width: 1440px) {
+        padding: 84px 94px;
+        background-size: 100% auto;
+        .logo-container svg {
+            max-width: 400px;
+        }
+
+        .holding-content, .logo-container {
+            width: 30vw;
+            max-width: 400px;
+        }
+    }
+}

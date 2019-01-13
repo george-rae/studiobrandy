@@ -1,0 +1,23 @@
+{
+  "name": "georges-fun-zone",
+  "version": "1.0.0",
+  "description": "Joji's little fun zone for cool things and awesome stuff.",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^7.1.1",
+    "node-sass": "^4.5.3",
+    "postcss-cli": "^4.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "node-sass": "^4.5.3",
+    "postcss-cli": "^4.1.0"
+  },
+  "scripts": {
+    "sass:watch": "node-sass -w css/_src/main.scss -o css --output-style compressed -x true",
+    "autoprefix": "postcss *.css --use autoprefixer -r css/main.css"
+  },
+  "author": "George Rae",
+  "license": "ISC",
+  "keywords": []
+}
